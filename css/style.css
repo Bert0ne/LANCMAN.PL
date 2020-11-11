@@ -92,15 +92,15 @@ body {
   right: 0;
   padding: 88px 88px 88px 0;
   max-width: 736px; }
-  .main_container--right .test1 {
+  .main_container--right .about {
     width: 200px;
     height: 1000px;
     background-color: blue; }
-  .main_container--right .test2 {
+  .main_container--right .projects {
     width: 200px;
     height: 1000px;
     background-color: green; }
-  .main_container--right .test3 {
+  .main_container--right .contact {
     width: 200px;
     height: 1000px;
     background-color: red; }
@@ -135,3 +135,8 @@ body {
       width: 24px;
       background-color: #8F8F90;
       transition: .3s ease-in-out; }
+    .nav__text--link .active__line, .nav__text--link:link .active__line, .nav__text--link:active .active__line {
+      width: 48px;
+      background-color: #fff; }
+  .nav .active__color {
+    color: #fff; }
