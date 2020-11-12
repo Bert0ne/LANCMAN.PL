@@ -10,7 +10,6 @@ body {
   justify-content: center; }
 
 .main_container {
-  border: 1px solid green;
   width: 1440px;
   height: 100vh;
   font-size: 14px;
@@ -20,7 +19,6 @@ body {
 .main_container--left {
   padding: 88px 0 88px 88px;
   max-width: 496px;
-  border: 1px solid purple;
   position: fixed;
   height: 100vh;
   font-size: 14px;
@@ -87,14 +85,13 @@ body {
       color: #fff; }
 
 .main_container--right {
-  border: 1px solid yellow;
   position: absolute;
   right: 0;
   padding: 88px 88px 88px 0;
   max-width: 736px; }
   .main_container--right .about {
     width: 200px;
-    height: 1000px;
+    height: 90vh;
     background-color: blue; }
   .main_container--right .projects {
     width: 200px;
