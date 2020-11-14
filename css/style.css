@@ -156,7 +156,14 @@ body {
     background-color: #202022;
     padding: 2rem 3rem 4rem;
     box-shadow: 5px 5px 0px 5px rgba(0, 0, 0, 0.4);
-    border-radius: 5px; }
+    border-radius: 5px;
+    width: 100%; }
+    .contact__form p {
+      margin: 0 auto;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 1.1rem; }
     .contact__form input {
       background: none;
       border-width: 0;
@@ -197,7 +204,8 @@ body {
       border: 1px solid #8F8F90;
       cursor: pointer;
       transition: .3s;
-      border-radius: 5px; }
+      border-radius: 5px;
+      margin: 0 auto; }
       .contact__form .button:hover {
         color: #fff;
         border-color: #fff; }
@@ -217,101 +225,94 @@ body {
       caret-color: #fff; }
     .contact__form .floating__input::placeholder {
       color: rgba(0, 0, 0, 0); }
-
-.floating__label {
-  display: block;
-  position: relative;
-  max-height: 0;
-  font-weight: 500;
-  pointer-events: none; }
-
-.floating__label::before {
-  color: #8F8F90;
-  content: attr(data-content);
-  display: inline-block;
-  filter: blur(0);
-  backface-visibility: hidden;
-  transform-origin: left top;
-  transition: transform 0.2s ease;
-  left: 1rem;
-  top: 1px;
-  position: absolute;
-  font-size: 1.2rem; }
-
-.floating__label::after {
-  bottom: 1rem;
-  content: "";
-  height: 0.1rem;
-  position: absolute;
-  transition: transform 180ms cubic-bezier(0.4, 0, 0.2, 1), opacity 180ms cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease;
-  opacity: 0;
-  left: 0;
-  top: 100%;
-  margin-top: -0.1rem;
-  transform: scale3d(0, 1, 1);
-  width: 100%;
-  background-color: white; }
-
-.floating__input:focus + .floating__label::after {
-  transform: scale3d(1, 1, 1);
-  opacity: 1; }
-
-.floating__input:placeholder-shown + .floating__label::before {
-  transform: translate3d(0, -2.2rem, 0) scale3d(1, 1, 1); }
-
-.floating__label::before,
-.floating__input:focus + .floating__label::before {
-  transform: translate3d(0, -5.12rem, 0) scale3d(0.82, 0.82, 1); }
-
-.floating__input2 {
-  padding: 1.8rem 1rem 0.6rem;
-  font-size: 1.2rem;
-  caret-color: #fff; }
-
-.floating__input2::placeholder {
-  color: rgba(0, 0, 0, 0); }
-
-.floating__label2 {
-  display: block;
-  position: relative;
-  max-height: 0;
-  font-weight: 500;
-  pointer-events: none; }
-
-.floating__label2::before {
-  color: #8F8F90;
-  content: attr(data-content);
-  display: inline-block;
-  filter: blur(0);
-  backface-visibility: hidden;
-  transform-origin: left top;
-  transition: transform 0.2s ease;
-  left: 1rem;
-  top: -280px;
-  position: absolute;
-  font-size: 1.2rem; }
-
-.floating__label2::after {
-  bottom: 1rem;
-  content: "";
-  height: 0.1rem;
-  position: absolute;
-  transition: transform 180ms cubic-bezier(0.4, 0, 0.2, 1), opacity 180ms cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease;
-  opacity: 0;
-  left: 0;
-  top: 100%;
-  margin-top: -0.1rem;
-  transform: scale3d(0, 1, 1);
-  width: 100%;
-  background-color: white; }
-
-.floating__input2:focus + .floating__label2::after {
-  transform: scale3d(1, 1, 1);
-  opacity: 1; }
-
-.floating__input2:placeholder-shown + .floating__label2::before {
-  transform: translate3d(0, 0rem, 0) scale3d(1, 1, 1); }
-
-.floating__label2::before,
-.floating__input2:focus + .floating__label2::before {
-  transform: translate3d(0, -3.12rem, 0) scale3d(0.82, 0.82, 1); }
+    .contact__form .floating__label {
+      display: block;
+      position: relative;
+      max-height: 0;
+      font-weight: 500;
+      pointer-events: none; }
+    .contact__form .floating__label::before {
+      color: #8F8F90;
+      content: attr(data-content);
+      display: inline-block;
+      filter: blur(0);
+      backface-visibility: hidden;
+      transform-origin: left top;
+      transition: transform 0.2s ease;
+      left: 1rem;
+      top: 1px;
+      position: absolute;
+      font-size: 1.2rem; }
+    .contact__form .floating__label::after {
+      bottom: 1rem;
+      content: "";
+      height: 0.1rem;
+      position: absolute;
+      transition: transform 180ms cubic-bezier(0.4, 0, 0.2, 1), opacity 180ms cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease;
+      opacity: 0;
+      left: 0;
+      top: 100%;
+      margin-top: -0.1rem;
+      transform: scale3d(0, 1, 1);
+      width: 100%;
+      background-color: white; }
+    .contact__form .floating__input:focus + .floating__label::after {
+      transform: scale3d(1, 1, 1);
+      opacity: 1; }
+    .contact__form .floating__input:placeholder-shown + .floating__label::before {
+      transform: translate3d(0, -2.2rem, 0) scale3d(1, 1, 1); }
+    .contact__form .floating__label::before,
+    .contact__form .floating__input:focus + .floating__label::before {
+      transform: translate3d(0, -5.12rem, 0) scale3d(0.82, 0.82, 1); }
+    .contact__form input:-webkit-autofill,
+    .contact__form input:-webkit-autofill:hover,
+    .contact__form input:-webkit-autofill:focus,
+    .contact__form input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px #202022 inset !important; }
+    .contact__form input:-webkit-autofill {
+      -webkit-text-fill-color: white !important; }
+    .contact__form .floating__input2 {
+      padding: 1.8rem 1rem 0.6rem;
+      font-size: 1.2rem;
+      caret-color: #fff; }
+    .contact__form .floating__input2::placeholder {
+      color: rgba(0, 0, 0, 0); }
+    .contact__form .floating__label2 {
+      display: block;
+      position: relative;
+      max-height: 0;
+      font-weight: 500;
+      pointer-events: none; }
+    .contact__form .floating__label2::before {
+      color: #8F8F90;
+      content: attr(data-content);
+      display: inline-block;
+      filter: blur(0);
+      backface-visibility: hidden;
+      transform-origin: left top;
+      transition: transform 0.2s ease;
+      left: 1rem;
+      top: -280px;
+      position: absolute;
+      font-size: 1.2rem; }
+    .contact__form .floating__label2::after {
+      bottom: 1rem;
+      content: "";
+      height: 0.1rem;
+      position: absolute;
+      transition: transform 180ms cubic-bezier(0.4, 0, 0.2, 1), opacity 180ms cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease;
+      opacity: 0;
+      left: 0;
+      top: 100%;
+      margin-top: -0.1rem;
+      transform: scale3d(0, 1, 1);
+      width: 100%;
+      background-color: white; }
+    .contact__form .floating__input2:focus + .floating__label2::after {
+      transform: scale3d(1, 1, 1);
+      opacity: 1; }
+    .contact__form .floating__input2:placeholder-shown + .floating__label2::before {
+      transform: translate3d(0, 0rem, 0) scale3d(1, 1, 1); }
+    .contact__form .floating__label2::before,
+    .contact__form .floating__input2:focus + .floating__label2::before {
+      transform: translate3d(0, -3.12rem, 0) scale3d(0.82, 0.82, 1); }

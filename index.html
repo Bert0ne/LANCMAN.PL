@@ -102,15 +102,10 @@
             <div class="subpages projects" id="Projects">test</div>
             <div class="subpages contact" id="Contact" >
                 <div class="contact__form">
-                    <form action="">
-                        <!-- <label for="emailForm">Your Email</label>
-                        <input type="email" name="emailForm" id="emailForm">
-                        <label for="message">Your Message:</label>
-                        <textarea id="message" name="message" rows="20" cols="50">How Can I Help You?</textarea>
-                        <p>Before sent, put your email and message please</p>
-                        <button type="submit">Sent</button> -->
+                    <form  id="my-form"  action="https://formspree.io/f/mjvporza"
+                    method="POST">
                         <div class="floating">
-                            <input id="input__email" class="floating__input" name="username" type="email" placeholder="Your Email" />
+                            <input id="input__email" class="floating__input" name="email" type="email" placeholder="Your Email" required/>
 
                             <label for="input__email" class="floating__label" data-content="Your Email">
                             <span class="hidden--visually">Your Email</span>
@@ -118,11 +113,13 @@
                         </div>
                         
                           <div class="floating">
-                            <textarea id="input__text" type="text" class="floating__input2" name="text" type="text"  rows="12" placeholder="Can Help?"></textarea>
+                            <textarea id="input__text" type="text" class="floating__input2" name="message" type="text"  rows="12" placeholder="Can Help?" required></textarea>
                             <label for="input__text" class="floating__label2" data-content="How Can I Help You" ><span class="hidden--visually">Your Message</span></label>
                           </div>
-                        
-                          <button class="button" type="submit">Sent</button>
+
+                          <p>Before send, make sure that all fields are completed.</p>
+                          <button class="button" type="submit"  id="my-form-button">Submit</button>
+                          <p id="my-form-status"></p>
                         </div>
                     </form>
                 </div>
@@ -136,5 +133,6 @@
 
 
     <script src="./js.js"></script>
+    <script src="./form.js"></script>
 </body>
 </html>
