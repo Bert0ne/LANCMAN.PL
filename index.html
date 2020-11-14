@@ -100,7 +100,33 @@
         <div class="main_container--right">
             <div class="subpages about" id="AboutMe">test</div>
             <div class="subpages projects" id="Projects">test</div>
-            <div class="subpages contact" id="Contact" >test</div>
+            <div class="subpages contact" id="Contact" >
+                <div class="contact__form">
+                    <form action="">
+                        <!-- <label for="emailForm">Your Email</label>
+                        <input type="email" name="emailForm" id="emailForm">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="20" cols="50">How Can I Help You?</textarea>
+                        <p>Before sent, put your email and message please</p>
+                        <button type="submit">Sent</button> -->
+                        <div class="floating">
+                            <input id="input__email" class="floating__input" name="username" type="email" placeholder="Your Email" />
+
+                            <label for="input__email" class="floating__label" data-content="Your Email">
+                            <span class="hidden--visually">Your Email</span>
+                            </label>
+                        </div>
+                        
+                          <div class="floating">
+                            <textarea id="input__text" type="text" class="floating__input" name="text" type="text"  rows="12" placeholder="Can Help?"></textarea>
+                            <label for="input__text" class="floating__label" data-content="How Can I Help You" ><span class="hidden--visually">Your Message</span></label>
+                          </div>
+                        
+                          <button class="button" type="submit">Sent</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
 
         </div>
         <!-- MAIN CONTAINER RIGHT END-->
