@@ -104,8 +104,8 @@ body {
       text-align: right;
       padding-bottom: 50px; }
   .main_container--right .projects {
-    width: 200px;
-    height: 1000px;
+    width: 648px;
+    height: 100vh;
     background-color: green; }
 
 .nav {
@@ -205,7 +205,8 @@ body {
       cursor: pointer;
       transition: .3s;
       border-radius: 5px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      outline: none; }
       .contact__form .button:hover {
         color: #fff;
         border-color: #fff; }
