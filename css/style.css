@@ -328,7 +328,8 @@ body {
     letter-spacing: 2px;
     transition: .4s;
     margin-top: 20px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    cursor: pointer; }
   .projects .active__switch {
     color: #fff;
     transform: scale(1.1);
@@ -374,7 +375,7 @@ body {
           transition: .4s;
           transition-delay: .2s; }
           .projects__web .projectsBox__miniature--desk img {
-            max-width: 100%;
+            width: 100%;
             height: auto;
             border-radius: 15px; }
         .projects__web .projectsBox__miniature--mobile {
@@ -395,3 +396,34 @@ body {
       .projects__web .projectsBox:hover .projectsBox__miniature--mobile,
       .projects__web .projectsBox:hover .projectsBox__miniature--desk {
         transform: translateY(-10px); }
+  .projects__app {
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 28px 10px; }
+    .projects__app a,
+    .projects__app a:link,
+    .projects__app a:active {
+      text-decoration: none;
+      color: inherit; }
+    .projects__app__box {
+      width: 100%;
+      height: 194px;
+      background-color: #202022;
+      margin: 20px 0;
+      transition: .4s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 25px;
+      cursor: pointer;
+      box-shadow: 5px 5px 0px 5px rgba(0, 0, 0, 0.4); }
+      .projects__app__box--lang {
+        color: #fff; }
+      .projects__app__box--name {
+        font-size: 1.4rem;
+        color: #fff; }
+      .projects__app__box:hover {
+        transform: scale(1.1); }
