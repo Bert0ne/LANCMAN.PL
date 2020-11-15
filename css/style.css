@@ -141,7 +141,7 @@ body {
     color: #fff; }
 
 .contact {
-  width: 648px;
+  width: 600px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -340,9 +340,14 @@ body {
     width: 100%;
     height: 100%;
     padding: 28px 10px; }
+    .projects__web a,
+    .projects__web a:link,
+    .projects__web a:active {
+      text-decoration: none;
+      color: inherit; }
     .projects__web .projectsBox {
       background-color: #202022;
-      width: 600px;
+      width: 580px;
       height: 220px;
       margin-bottom: 70px;
       display: flex;
@@ -350,7 +355,9 @@ body {
       flex-direction: column;
       border-radius: 15px;
       box-shadow: 5px 5px 0px 5px rgba(0, 0, 0, 0.4);
-      position: relative; }
+      position: relative;
+      cursor: pointer;
+      transition: .4s; }
       .projects__web .projectsBox__miniature {
         display: flex;
         flex-direction: row;
@@ -358,27 +365,33 @@ body {
         align-content: flex-end;
         width: 100%;
         height: 100%;
-        margin: 30px 20px; }
+        margin: 80px 20px; }
         .projects__web .projectsBox__miniature--desk {
           width: 350px;
-          height: 160px;
+          height: 20px;
           margin-left: 40px;
-          margin-right: 40px; }
+          margin-right: 40px;
+          transition: .4s;
+          transition-delay: .2s; }
           .projects__web .projectsBox__miniature--desk img {
             max-width: 100%;
             height: auto;
-            border-radius: 15px;
-            border: 1px solid #8F8F90; }
+            border-radius: 15px; }
         .projects__web .projectsBox__miniature--mobile {
-          height: 370px;
-          width: 100px; }
+          width: 100px;
+          height: 160px;
+          transition: .4s; }
           .projects__web .projectsBox__miniature--mobile img {
             max-width: 100%;
             height: auto;
-            border-radius: 15px;
-            border: 1px solid #8F8F90; }
+            border-radius: 15px; }
       .projects__web .projectsBox__name {
         font-size: 1.3rem;
         position: absolute;
         font-weight: 600;
-        margin: 10px -15px; }
+        margin: -10px -15px; }
+      .projects__web .projectsBox:hover {
+        box-shadow: 5px 5px 0px 5px rgba(143, 143, 144, 0.4); }
+      .projects__web .projectsBox:hover .projectsBox__miniature--mobile,
+      .projects__web .projectsBox:hover .projectsBox__miniature--desk {
+        transform: translateY(-10px); }
