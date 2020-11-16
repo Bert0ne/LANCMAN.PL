@@ -46,3 +46,36 @@ for (let [numImg] of projectBox.entries()) {
     imgDesk[numImg].src = `./landscapes/${numImg + 1}d.png`;
   });
 }
+//SWITCH BUTTON WEBSITE / APPS
+let switch1 = document.querySelector(".switch__buttons--span1");
+let switch2 = document.querySelector(".switch__buttons--span2");
+
+let pApp = document.querySelector(".projects__app");
+let pWeb = document.querySelector(".projects__web");
+
+switch1.addEventListener("click", function () {
+  switch2.style.color = "#8f8f90";
+  switch1.style.color = "#fff";
+
+  pWeb.style.display = "flex";
+  pApp.style.display = "none";
+});
+
+switch2.addEventListener("click", function () {
+  switch1.style.color = "#8f8f90";
+  switch2.style.color = "#fff";
+
+  pWeb.style.display = "none";
+  pApp.style.display = "flex";
+});
+
+// for (let btn of switchB) {
+//   btn.addEventListener("click", function () {
+//     for (let btnAll of switchB) {
+//       btnAll.classList.remove("active__switch");
+//     }
+//     btn.classList.toggle("active__switch");
+
+//     console.log(pApp.currentStyle);
+//   });
+// }
