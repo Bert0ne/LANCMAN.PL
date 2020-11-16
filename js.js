@@ -56,8 +56,8 @@ let pWeb = document.querySelector(".projects__web");
 switch1.addEventListener("click", function () {
   switch2.style.color = "#8f8f90";
   switch1.style.color = "#fff";
-  switch1.style.fontSize = "1rem";
-  switch2.style.fontSize = ".9rem";
+  switch1.style.fontSize = "1.3rem";
+  switch2.style.fontSize = "1.2rem";
 
   pApp.style.visibility = "hidden";
   pApp.style.opacity = "0";
@@ -75,8 +75,8 @@ switch1.addEventListener("click", function () {
 switch2.addEventListener("click", function () {
   switch1.style.color = "#8f8f90";
   switch2.style.color = "#fff";
-  switch1.style.fontSize = "0.9rem";
-  switch2.style.fontSize = "1rem";
+  switch1.style.fontSize = "1.2rem";
+  switch2.style.fontSize = "1.3rem";
 
   pWeb.style.visibility = "hidden";
   pWeb.style.opacity = "0";
