@@ -243,11 +243,12 @@ body {
   justify-content: center;
   flex-direction: column;
   position: relative;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin-left: auto; }
   @media only screen and (max-width: 1350px) {
     .contact {
-      justify-content: flex-start;
-      padding: 20% 5px; } }
+      width: 500px;
+      justify-content: flex-start; } }
   .contact__form {
     background-color: #202022;
     padding: 2rem 3rem 4rem;
@@ -257,8 +258,9 @@ body {
     @media only screen and (max-width: 1350px) {
       .contact__form {
         width: 90%;
-        height: 70%;
-        margin-left: auto; } }
+        height: 600px;
+        margin-left: auto;
+        padding: 15px; } }
     .contact__form p {
       margin: 0 auto;
       color: #fff;
