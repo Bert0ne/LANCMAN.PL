@@ -322,8 +322,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: 30px;
-  transition: opacity 600ms, visibility 600ms; }
+  padding-top: 30px; }
   .projects .switch__buttons {
     color: #8F8F90;
     letter-spacing: 2px;
@@ -347,7 +346,7 @@ body {
     margin-top: 40px;
     opacity: 1;
     visibility: visible;
-    transition: visibility 0s, opacity 0.2s linear; }
+    transition: visibility 150ms, opacity 150ms linear; }
     .projects__web a,
     .projects__web a:link,
     .projects__web a:active {
@@ -378,8 +377,7 @@ body {
           height: 20px;
           margin-left: 40px;
           margin-right: 40px;
-          transition: .4s;
-          transition-delay: .2s; }
+          transition: transform .4s .2s; }
           .projects__web .projectsBox__miniature--desk img {
             width: 100%;
             height: auto;
@@ -387,7 +385,7 @@ body {
         .projects__web .projectsBox__miniature--mobile {
           width: 100px;
           height: 160px;
-          transition: .4s; }
+          transition: transform .4s; }
           .projects__web .projectsBox__miniature--mobile img {
             max-width: 100%;
             height: auto;
@@ -411,7 +409,7 @@ body {
     padding: 28px 10px;
     opacity: 0;
     visibility: hidden;
-    transition: visibility 0s, opacity 0.2s linear; }
+    transition: visibility 150ms, opacity 150ms linear; }
     .projects__app a,
     .projects__app a:link,
     .projects__app a:active {

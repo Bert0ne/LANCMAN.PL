@@ -56,48 +56,37 @@ let pWeb = document.querySelector(".projects__web");
 switch1.addEventListener("click", function () {
   switch2.style.color = "#8f8f90";
   switch1.style.color = "#fff";
-
-  pWeb.style.visibility = "visible";
-  pWeb.style.opacity = "1";
+  switch1.style.fontSize = "1rem";
+  switch2.style.fontSize = ".9rem";
 
   pApp.style.visibility = "hidden";
   pApp.style.opacity = "0";
+  setTimeout(() => {
+    pApp.style.display = "none";
 
-  pApp.style.display = "none";
-  pWeb.style.display = "flex";
-  // setTimeout(() => {
-  //   pWeb.style.position = "static";
-
-  //   pApp.style.position = "absolute";
-  // }, 300);
+    setTimeout(() => {
+      pWeb.style.visibility = "visible";
+      pWeb.style.opacity = "1";
+    }, 100);
+    pWeb.style.display = "flex";
+  }, 150);
 });
 
 switch2.addEventListener("click", function () {
   switch1.style.color = "#8f8f90";
   switch2.style.color = "#fff";
+  switch1.style.fontSize = "0.9rem";
+  switch2.style.fontSize = "1rem";
 
   pWeb.style.visibility = "hidden";
   pWeb.style.opacity = "0";
+  setTimeout(() => {
+    pWeb.style.display = "none";
 
-  pApp.style.visibility = "visible";
-  pApp.style.opacity = "1";
-
-  pApp.style.display = "flex";
-  pWeb.style.display = "none";
-  // setTimeout(() => {
-  //   pApp.style.position = "static";
-
-  //   pWeb.style.position = "absolute";
-  // }, 200);
+    setTimeout(() => {
+      pApp.style.visibility = "visible";
+      pApp.style.opacity = "1";
+    }, 100);
+    pApp.style.display = "flex";
+  }, 150); 
 });
-
-// for (let btn of switchB) {
-//   btn.addEventListener("click", function () {
-//     for (let btnAll of switchB) {
-//       btnAll.classList.remove("active__switch");
-//     }
-//     btn.classList.toggle("active__switch");
-
-//     console.log(pApp.currentStyle);
-//   });
-// }
