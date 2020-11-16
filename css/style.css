@@ -322,7 +322,8 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: 30px; }
+  padding-top: 30px;
+  transition: opacity 600ms, visibility 600ms; }
   .projects .switch__buttons {
     color: #8F8F90;
     letter-spacing: 2px;
@@ -342,7 +343,11 @@ body {
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
-    padding: 28px 10px; }
+    padding: 28px 10px;
+    margin-top: 40px;
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0s, opacity 0.2s linear; }
     .projects__web a,
     .projects__web a:link,
     .projects__web a:active {
@@ -359,8 +364,7 @@ body {
       border-radius: 5px;
       box-shadow: 5px 5px 0px 5px rgba(0, 0, 0, 0.4);
       position: relative;
-      cursor: pointer;
-      transition: .4s; }
+      cursor: pointer; }
       .projects__web .projectsBox__miniature {
         display: flex;
         flex-direction: row;
@@ -399,12 +403,15 @@ body {
       .projects__web .projectsBox:hover .projectsBox__miniature--desk {
         transform: translateY(-10px); }
   .projects__app {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
     width: 100%;
-    padding: 28px 10px; }
+    padding: 28px 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.2s linear; }
     .projects__app a,
     .projects__app a:link,
     .projects__app a:active {

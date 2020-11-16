@@ -57,16 +57,38 @@ switch1.addEventListener("click", function () {
   switch2.style.color = "#8f8f90";
   switch1.style.color = "#fff";
 
-  pWeb.style.display = "flex";
+  pWeb.style.visibility = "visible";
+  pWeb.style.opacity = "1";
+
+  pApp.style.visibility = "hidden";
+  pApp.style.opacity = "0";
+
   pApp.style.display = "none";
+  pWeb.style.display = "flex";
+  // setTimeout(() => {
+  //   pWeb.style.position = "static";
+
+  //   pApp.style.position = "absolute";
+  // }, 300);
 });
 
 switch2.addEventListener("click", function () {
   switch1.style.color = "#8f8f90";
   switch2.style.color = "#fff";
 
-  pWeb.style.display = "none";
+  pWeb.style.visibility = "hidden";
+  pWeb.style.opacity = "0";
+
+  pApp.style.visibility = "visible";
+  pApp.style.opacity = "1";
+
   pApp.style.display = "flex";
+  pWeb.style.display = "none";
+  // setTimeout(() => {
+  //   pApp.style.position = "static";
+
+  //   pWeb.style.position = "absolute";
+  // }, 200);
 });
 
 // for (let btn of switchB) {
