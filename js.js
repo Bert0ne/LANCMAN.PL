@@ -88,5 +88,10 @@ switch2.addEventListener("click", function () {
       pApp.style.opacity = "1";
     }, 100);
     pApp.style.display = "flex";
-  }, 150); 
+  }, 150);
 });
+
+//footer
+let currentYear = document.querySelector(".current_year");
+let time = new Date().getFullYear();
+currentYear.innerText = time;

@@ -1,3 +1,17 @@
+/*
+600px - 900px Tablet Portrait
+1000px - 1280px Tablet Landscape
+
+1200px - 1800px  normal styles apply
+
+  
+
+$breakpoint argument choices:
+- tab-port
+- tab-land
+
+
+*/
 html {
   scroll-behavior: smooth; }
 
@@ -35,6 +49,9 @@ body {
       color: #ffffff;
       font-weight: 700;
       line-height: 1; }
+      @media only screen and (max-width: 1280px) {
+        .left_container_top__topIn h1 {
+          font-size: 48px; } }
     .left_container_top__topIn .infoAbout {
       line-height: 2;
       margin-top: 32px; }
@@ -103,7 +120,7 @@ body {
       background-color: #202022;
       color: #fff;
       text-align: center;
-      margin-top: 300px; }
+      margin-top: 250px; }
       .main_container--right .about .frontDiv > div {
         margin-top: -30px; }
       .main_container--right .about .frontDiv p {
@@ -323,6 +340,10 @@ body {
     .contact__form .floating__label2::before,
     .contact__form .floating__input2:focus + .floating__label2::before {
       transform: translate3d(0, -3.12rem, 0) scale3d(0.82, 0.82, 1); }
+  .contact .copyright {
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px; }
 
 .projects {
   width: 648px;
