@@ -44,7 +44,7 @@ body {
   justify-content: space-between; }
   @media only screen and (max-width: 1350px) {
     .main_container--left {
-      padding: 10px 0 5px 10px;
+      padding: 30px;
       width: 100%; } }
   @media only screen and (max-width: 1000px) {
     .main_container--left {
@@ -71,6 +71,14 @@ body {
       @media only screen and (max-width: 1350px) {
         .left_container_top__topIn h1 {
           font-size: 48px; } }
+    .left_container_top__topIn .hiddenH2 {
+      display: none; }
+      @media only screen and (max-width: 1000px) {
+        .left_container_top__topIn .hiddenH2 {
+          display: block;
+          text-align: left;
+          font-size: 30px;
+          color: #fff; } }
     .left_container_top__topIn .infoAbout {
       line-height: 2;
       margin-top: 32px; }
@@ -248,7 +256,7 @@ body {
   @media only screen and (max-width: 1350px) {
     .contact {
       width: 500px;
-      justify-content: flex-start; } }
+      justify-content: flex-end; } }
   .contact__form {
     background-color: #202022;
     padding: 2rem 3rem 4rem;
@@ -260,7 +268,8 @@ body {
         width: 90%;
         height: 600px;
         margin-left: auto;
-        padding: 15px; } }
+        padding: 15px;
+        margin-bottom: 150px; } }
     .contact__form p {
       margin: 0 auto;
       color: #fff;
@@ -430,15 +439,16 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
   padding-top: 30px;
-  margin-left: auto; }
+  margin-left: auto;
+  padding-top: 80px; }
   @media only screen and (max-width: 1350px) {
     .projects {
       padding: 28px 0px;
-      align-items: flex-end;
+      align-items: center;
       width: 520px; } }
   .projects .switch__buttons {
     color: #8F8F90;
@@ -451,9 +461,6 @@ body {
     margin-bottom: auto;
     position: relative;
     font-size: 1.2rem; }
-    @media only screen and (max-width: 1350px) {
-      .projects .switch__buttons {
-        align-self: center; } }
     .projects .switch__buttons::before {
       content: ' ';
       position: absolute;
@@ -475,17 +482,18 @@ body {
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
-    padding: 28px 10px;
+    padding: 5px 10px;
     margin-top: 40px;
     opacity: 1;
     visibility: visible;
     transition: visibility 150ms, opacity 150ms linear; }
     @media only screen and (max-width: 1350px) {
       .projects__web {
-        padding: 28px 0px;
+        padding: 0px;
         width: 100%;
         align-content: flex-end;
-        justify-items: flex-end; } }
+        justify-items: flex-start;
+        margin-top: 5px; } }
     .projects__web a {
       margin-left: auto; }
       @media only screen and (max-width: 1350px) {
@@ -506,7 +514,7 @@ body {
       background-color: #202022;
       width: 580px;
       height: 220px;
-      margin-bottom: 70px;
+      margin-bottom: 50px;
       border-radius: 5px;
       box-shadow: 5px 5px 0px 5px rgba(0, 0, 0, 0.4);
       position: relative;
@@ -523,7 +531,9 @@ body {
         align-content: flex-end;
         width: 100%;
         height: 100%;
-        margin: 80px 20px; }
+        margin: 0px 20px;
+        position: absolute;
+        top: -20px; }
         .projects__web .projectsBox__miniature--desk {
           width: 350px;
           height: 20px;
@@ -557,17 +567,18 @@ body {
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    width: 100%;
+    width: 600px;
     padding: 28px 10px;
     opacity: 0;
     visibility: hidden;
     transition: visibility 150ms, opacity 150ms linear;
     display: none; }
+    .projects__app > div {
+      margin-bottom: auto; }
     @media only screen and (max-width: 1350px) {
       .projects__app {
         padding: 28px 0px;
-        width: 100%;
-        justify-content: flex-start; } }
+        width: 100%; } }
     .projects__app a,
     .projects__app a:link,
     .projects__app a:active {
