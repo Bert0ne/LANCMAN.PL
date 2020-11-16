@@ -91,18 +91,28 @@ body {
   max-width: 736px; }
   .main_container--right .about {
     width: 648px;
-    height: 95vh;
+    height: 100vh;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     position: relative; }
-    .main_container--right .about .h1 {
-      font-size: 64px;
-      color: #ffffff;
-      font-weight: 700;
-      line-height: 1;
-      text-align: right;
-      padding-bottom: 50px; }
+    .main_container--right .about .frontDiv {
+      width: 475px;
+      height: 120px;
+      background-color: #202022;
+      color: #fff;
+      text-align: center;
+      margin-top: 300px; }
+      .main_container--right .about .frontDiv > div {
+        margin-top: -30px; }
+      .main_container--right .about .frontDiv p {
+        font-size: 64px;
+        color: #ffffff;
+        font-weight: 700;
+        line-height: 1; }
+        .main_container--right .about .frontDiv p:last-child {
+          font-size: 60px; }
 
 .nav {
   color: #8F8F90;
@@ -331,9 +341,20 @@ body {
     cursor: pointer;
     letter-spacing: 1.5px;
     transition: .4s;
-    margin-bottom: auto; }
+    margin-bottom: auto;
+    position: relative; }
+    .projects .switch__buttons::before {
+      content: ' ';
+      position: absolute;
+      height: 1px;
+      color: #8f8f90;
+      width: 60%;
+      bottom: -4px;
+      left: 20%;
+      background-color: #8f8f90; }
     .projects .switch__buttons--span1 {
-      color: #fff; }
+      color: #fff;
+      padding: 5px 0; }
     .projects .switch__buttons--span1, .projects .switch__buttons--span2 {
       transition: .4s; }
   .projects__web {
@@ -363,7 +384,8 @@ body {
       border-radius: 5px;
       box-shadow: 5px 5px 0px 5px rgba(0, 0, 0, 0.4);
       position: relative;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: box-shadow .4s; }
       .projects__web .projectsBox__miniature {
         display: flex;
         flex-direction: row;
