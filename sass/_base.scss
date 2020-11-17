@@ -1,0 +1,50 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $bg-dark1;
+
+    font-family: Gothic A1,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif;
+    line-height: 1.5;
+    color: $font-gray;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+
+}
+
+.main_container {
+    width: 1440px;
+    height: 100%;
+    font-size: 14px;
+
+    position: relative;
+    display: flex;
+
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        height: 100%;
+    }            
+
+}
+
+.lang {
+    top: 10px;
+    right: 20px;
+    position: absolute;
+    color: #8f8f90;
+    font-size: 1.3rem;
+
+    &__active {
+        color: #fff;
+    }
+    a,
+    a:link,
+    a:active {
+        text-decoration: none;
+        color: #8f8f90;
+    }
+}

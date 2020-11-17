@@ -1,0 +1,345 @@
+.projects {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding-top: 30px;
+    margin-left: auto;
+    padding-top: 80px;
+
+    @include respond(tab-land) {
+        padding: 28px 0px;
+        align-items: flex-end;
+        width: 520px;
+     }         
+     @include respond(tab-port) {
+        min-width: 100%;
+     }     
+     @include respond(phone) {
+         
+        width: 90vw;
+     }     
+
+    .switch__buttons {
+        // position: absolute;
+        color: $font-gray;
+        letter-spacing: 2px;
+        transition: .4s;
+        margin-top: 40px;
+        cursor: pointer;
+        letter-spacing: 1.5px;
+        transition: .4s;
+        margin-bottom: auto;
+        position: relative;
+        font-size: 1.2rem;
+
+        @include respond(tab-land) {
+            align-self: center;
+            margin-bottom: 40px;
+         }   
+         @include respond(tab-port) {
+            display: none;
+         }   
+       
+       
+
+        &::before {
+            content: ' ';
+            position: absolute;
+            height: 1px;
+            color: #8f8f90;
+            width: 60%;
+            bottom: -4px;
+            left: 20%;
+            background-color: #8f8f90;
+        }
+        
+
+        &--span1 {
+            color: #fff;
+            font-size: 1.3rem;
+
+        }
+        &--span1,
+        &--span2 {
+            transition: .4s;
+            padding: 10px;
+
+
+        }
+    }
+
+
+    &__web {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        // background-color: blue;
+        width: 100%;
+        min-height: 100vh;
+        padding: 5px 10px;
+        margin-top: 40px;
+        opacity: 1;
+        visibility: visible;
+        transition: visibility 150ms, opacity 150ms linear;
+
+
+        @include respond(tab-land) {
+           padding: 0px;
+           width: 90%;
+           margin-top: 5px;
+        }            
+        @include respond(tab-port) {
+            display: flex;      
+            opacity: 1;
+            visibility: visible;
+            width: 100vw;
+            justify-content: space-evenly;;
+         }   
+         @include respond(phone) {
+            display: flex;      
+            opacity: 1;
+            visibility: visible;
+         }   
+   
+
+
+        a {
+            margin-left: auto;            
+
+            @include respond(tab-land) {
+                width: 100%; 
+                margin-left: auto;
+            }            
+            @include respond(phone) {
+               width: 290px;
+               margin: 0;
+            }       
+        }
+        a,
+        a:link,
+        a:active {
+            text-decoration: none;
+            color: inherit;
+            text-align: right;
+        } 
+          .projectsBox {
+            justify-content: flex-end;
+            align-content: flex-end;            
+            flex-direction: column;
+            display: flex;
+
+
+            background-color: #202022;
+            width: 580px;
+            height: 220px;
+            margin-bottom: 50px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 0px 5px rgba(0, 0, 0, 0.4);   
+            position: relative;
+            cursor: pointer; 
+            transition: box-shadow .4s;
+            margin-left: auto;
+
+          @include respond(tab-land) {
+            width: 100%;
+            margin-bottom: 0px;
+            height: 150px;
+         }            
+         @include respond(tab-port) {
+            width: 100%;
+            margin-bottom: 50px;
+            height: 150px;
+        }            
+         @include respond(phone) {
+            width: 280px;
+            height: 110px;
+            box-shadow: none;
+         }            
+        
+
+
+
+            &__miniature {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-content: flex-end;
+                width: 100%;
+                height: 100%;
+                margin: 0px 20px;
+                position: absolute;
+                top: -20px;
+                @include respond(tab-land) {
+                    margin: 0;        
+                    justify-content: center;
+                }        
+                
+                @include respond(phone) {
+                    height: 150px;
+                    margin: 10px;
+                }        
+
+                    &--desk {
+                        width: 350px;
+                        height: 20px;
+                        margin-left: 40px;
+                        margin-right: 40px;
+                        transition: transform .4s .2s;
+                        // transition-delay: ;
+                        @include respond(tab-land) {
+                            margin: 0 20px;
+                            width: 250px;        
+                        }        
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                            border-radius: 8px;
+                            // border: 1px solid #8F8F90;
+                        }    
+                    }
+                    &--mobile {
+                        width: 100px;
+                        height: 160px;
+                        transition: transform .4s;
+                        @include respond(tab-land) {
+                            margin: 0 20px;
+                            width: 70px;        
+                        }     
+
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                            border-radius: 5px;
+                            // border: 1px solid #8F8F90;
+                        }
+                    }
+            }
+
+            &__name {
+                font-size: 1.3rem;
+                // text-transform: uppercase;
+                position: absolute;
+                font-weight: 600;
+                // margin-right: auto ;
+                align-self: center;
+                bottom: 0px;
+
+
+                @include respond(phone) {
+                    font-size: .9rem;
+                }       
+            }
+
+            &:hover {
+                box-shadow: 5px 5px 0px 5px rgba($font-gray, 0.4);     
+                
+                @include respond(tab-land) {
+                    box-shadow: none;
+                 }  
+                @include respond(phone) {
+                    box-shadow: none;
+                 }    
+            }
+            &:hover .projectsBox__miniature--mobile,
+            &:hover .projectsBox__miniature--desk {
+                transform: translateY(-10px);
+
+                @include respond(tab-land) {
+                    transform: none;
+                 }    
+            }
+        }
+    }   
+
+    //! APPS 
+
+    &__app {
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+        width: 600px;
+        padding: 28px 10px;
+        opacity: 0;
+        visibility: hidden;
+        transition: visibility 150ms, opacity 150ms linear;
+        display: none;
+        
+        & > div {
+            margin-bottom: auto;
+
+            @include respond(tab-port) {
+               margin-bottom: 10px;
+             }   
+        }
+
+        @include respond(tab-land) {
+            padding: 28px 0px;
+            width: 100%;
+        }         
+        @include respond(tab-port) {
+            display: flex;      
+            opacity: 1;
+            visibility: visible;
+            width: 90vw;
+            min-width: 100%;
+            height: 100%;
+            min-height: 100%;
+         }   
+
+        a,
+        a:link,
+        a:active {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a {
+            width: 100%;
+            @include respond(tab-land) {
+                width: 60%;
+                margin-left: auto;
+ 
+            }
+        }
+        &__box {
+            width: 100%;
+            height: 194px;
+            background-color: $bg-dark2;
+            margin: 20px 0;
+            transition: .4s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 25px;
+            cursor: pointer;
+            box-shadow: 5px 5px 0px 5px rgba(0, 0, 0, 0.4);   
+            border-radius: 5px;
+
+            @include respond(phone) {
+                height: 100px;
+            }  
+
+            &--lang {
+                color: #fff;
+            }
+            &--name {
+                font-size: 1.4rem;
+                color: #fff;
+
+                @include respond(phone) {
+                    font-size: 1.3rem;
+                }  
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

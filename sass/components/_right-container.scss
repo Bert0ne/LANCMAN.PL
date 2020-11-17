@@ -1,0 +1,115 @@
+  .main_container--right {
+      position: absolute;
+      right: 0;
+      padding: 88px 88px 88px 0;
+      max-width: 736px;
+
+      @include respond(tab-port) {
+        flex-direction: column;
+        align-content: flex-end;
+        position: static;
+        min-width: 100vw;
+        align-self: flex-end;
+        display: flex;
+    }        
+
+      @include respond(tab-land) {
+        padding: 10px 5px 10px 0;
+        width: 520px;
+      }            
+      @include respond(phone) {
+        width: 100vw;
+        padding-right: 0;
+     }       
+
+      .about {
+        width: 310px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    
+        @include respond(tab-land) {
+          margin-left: auto;
+        }       
+        @include respond(tab-port) {
+          display: none;
+        }        
+     
+        
+        
+        .frontDiv {
+          width: 475px;
+          height: 100px;
+          background-color: #202022;
+          color: #fff;
+          text-align: center;
+          margin-top: 250px;
+
+          @include respond(tab-land) {
+            width: 300px;
+            margin-top: -90px;
+            margin-left: auto;
+        }            
+
+          & > div {
+            margin-top: -30px;
+
+            @include respond(tab-land) {
+              margin-top: -20px;
+
+          }            
+          }
+
+          p {
+            font-size: 64px;
+            color: #ffffff;
+            font-weight: 700;
+            line-height: 1;
+
+            @include respond(tab-land) {
+              font-size: 48px;
+          }            
+
+            &:last-child {
+              font-size: 60px;
+
+              @include respond(tab-land) {
+                font-size: 40px;
+            }            
+            }
+          }
+        }
+      }     
+      .copyright {
+        font-size: 14px;
+        position: absolute;
+        bottom: 0;
+        padding-left: 20px; 
+
+        @include respond(tab-port) {
+         margin-top: auto;
+        }
+      }
+      .labelTabPort {
+        font-size: .9rem;
+        font-weight: 600;
+        margin-bottom: 40px;
+        margin-top: 0;
+        margin-left: 0px;
+        padding: 5px 20px;
+        color: #fff;
+        position: sticky;
+        top: 0px;
+        z-index: 100;
+        background-color: $bg-dark1;
+        display: none;
+
+        @include respond(tab-port) {
+          display: block;
+         }
+      }
+  } 
+  
