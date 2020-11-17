@@ -234,6 +234,9 @@ body {
     font-size: 14px;
     position: absolute;
     bottom: 0; }
+    @media only screen and (max-width: 1000px) {
+      .main_container--right .copyright {
+        margin-top: auto; } }
 
 .nav {
   color: #8F8F90;
@@ -541,6 +544,9 @@ body {
   @media only screen and (max-width: 1000px) {
     .projects {
       min-width: 100%; } }
+  @media only screen and (max-width: 530px) {
+    .projects {
+      width: 90vw; } }
   .projects .switch__buttons {
     color: #8F8F90;
     letter-spacing: 2px;
@@ -595,12 +601,21 @@ body {
         opacity: 1;
         visibility: visible;
         width: 90vw; } }
+    @media only screen and (max-width: 530px) {
+      .projects__web {
+        display: flex;
+        opacity: 1;
+        visibility: visible; } }
     .projects__web a {
       margin-left: auto; }
       @media only screen and (max-width: 1350px) {
         .projects__web a {
           width: 100%;
           margin-left: auto; } }
+      @media only screen and (max-width: 530px) {
+        .projects__web a {
+          width: 290px;
+          margin: 0; } }
     .projects__web a,
     .projects__web a:link,
     .projects__web a:active {
@@ -626,6 +641,11 @@ body {
         .projects__web .projectsBox {
           width: 100%;
           margin-bottom: 0px; } }
+      @media only screen and (max-width: 530px) {
+        .projects__web .projectsBox {
+          width: 280px;
+          height: 110px;
+          box-shadow: none; } }
       .projects__web .projectsBox__miniature {
         display: flex;
         flex-direction: row;
@@ -640,6 +660,10 @@ body {
           .projects__web .projectsBox__miniature {
             margin: 0;
             justify-content: center; } }
+        @media only screen and (max-width: 530px) {
+          .projects__web .projectsBox__miniature {
+            height: 150px;
+            margin: 10px; } }
         .projects__web .projectsBox__miniature--desk {
           width: 350px;
           height: 20px;
@@ -672,8 +696,17 @@ body {
         font-weight: 600;
         align-self: center;
         bottom: 0px; }
+        @media only screen and (max-width: 530px) {
+          .projects__web .projectsBox__name {
+            font-size: .9rem; } }
       .projects__web .projectsBox:hover {
         box-shadow: 5px 5px 0px 5px rgba(143, 143, 144, 0.4); }
+        @media only screen and (max-width: 1000px) {
+          .projects__web .projectsBox:hover {
+            box-shadow: none; } }
+        @media only screen and (max-width: 530px) {
+          .projects__web .projectsBox:hover {
+            box-shadow: none; } }
       .projects__web .projectsBox:hover .projectsBox__miniature--mobile,
       .projects__web .projectsBox:hover .projectsBox__miniature--desk {
         transform: translateY(-10px); }
@@ -729,10 +762,16 @@ body {
       cursor: pointer;
       box-shadow: 5px 5px 0px 5px rgba(0, 0, 0, 0.4);
       border-radius: 5px; }
+      @media only screen and (max-width: 530px) {
+        .projects__app__box {
+          height: 100px; } }
       .projects__app__box--lang {
         color: #fff; }
       .projects__app__box--name {
         font-size: 1.4rem;
         color: #fff; }
+        @media only screen and (max-width: 530px) {
+          .projects__app__box--name {
+            font-size: 1.3rem; } }
       .projects__app__box:hover {
         transform: scale(1.1); }

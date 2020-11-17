@@ -33,19 +33,22 @@ function navChanges(navData) {
 
 // HOVER PROJECTS
 //MOUSEOVER
-for (let [numImg] of projectBox.entries()) {
-  projectBox[numImg].addEventListener("mouseover", function () {
-    imgMobile[numImg].src = `./landscapes/${numImg + 1}mg.gif`;
-    imgDesk[numImg].src = `./landscapes/${numImg + 1}dg.gif`;
-  });
+if (window.screen.width >= 1124) {
+  for (let [numImg] of projectBox.entries()) {
+    projectBox[numImg].addEventListener("mouseover", function () {
+      imgMobile[numImg].src = `./landscapes/${numImg + 1}mg.gif`;
+      imgDesk[numImg].src = `./landscapes/${numImg + 1}dg.gif`;
+    });
+  }
+  //MOUSEOUT
+  for (let [numImg] of projectBox.entries()) {
+    projectBox[numImg].addEventListener("mouseout", function () {
+      imgMobile[numImg].src = `./landscapes/${numImg + 1}m.png`;
+      imgDesk[numImg].src = `./landscapes/${numImg + 1}d.png`;
+    });
+  }
 }
-//MOUSEOUT
-for (let [numImg] of projectBox.entries()) {
-  projectBox[numImg].addEventListener("mouseout", function () {
-    imgMobile[numImg].src = `./landscapes/${numImg + 1}m.png`;
-    imgDesk[numImg].src = `./landscapes/${numImg + 1}d.png`;
-  });
-}
+
 //SWITCH BUTTON WEBSITE / APPS
 let switch1 = document.querySelector(".switch__buttons--span1");
 let switch2 = document.querySelector(".switch__buttons--span2");
