@@ -213,6 +213,10 @@ body {
           @media only screen and (max-width: 1350px) {
             .main_container--right .about .frontDiv p:last-child {
               font-size: 40px; } }
+  .main_container--right .copyright {
+    font-size: 14px;
+    position: absolute;
+    bottom: 0; }
 
 .nav {
   color: #8F8F90;
@@ -267,10 +271,11 @@ body {
       padding: 30px 30px 0 0; } }
   @media only screen and (max-width: 1000px) {
     .contact {
-      min-width: 80%;
       margin: 0;
       padding: 0;
-      background-color: green; } }
+      align-self: flex-end;
+      margin-right: 10px;
+      height: 200vh; } }
   .contact__form {
     background-color: #202022;
     padding: 2rem 3rem 4rem;
@@ -445,10 +450,6 @@ body {
     .contact__form .floating__label2::before,
     .contact__form .floating__input2:focus + .floating__label2::before {
       transform: translate3d(0, -3.12rem, 0) scale3d(0.82, 0.82, 1); }
-  .contact .copyright {
-    font-size: 14px;
-    position: absolute;
-    bottom: 10px; }
 
 .projects {
   width: 100%;
