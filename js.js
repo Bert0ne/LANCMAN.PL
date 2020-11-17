@@ -33,7 +33,7 @@ function navChanges(navData) {
 
 // HOVER PROJECTS
 //MOUSEOVER
-if (window.screen.width >= 1124) {
+if (window.screen.width >= 1324) {
   for (let [numImg] of projectBox.entries()) {
     projectBox[numImg].addEventListener("mouseover", function () {
       imgMobile[numImg].src = `./landscapes/${numImg + 1}mg.gif`;
