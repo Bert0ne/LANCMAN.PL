@@ -25,13 +25,15 @@ body {
 
 .main_container {
   width: 1440px;
-  height: 100vh;
+  height: 100%;
   font-size: 14px;
   position: relative;
   display: flex; }
   @media only screen and (max-width: 1000px) {
     .main_container {
-      flex-direction: column; } }
+      flex-direction: column;
+      height: 100%;
+      width: 100vw; } }
 
 .main_container--left {
   padding: 88px 0 88px 88px;
@@ -85,7 +87,8 @@ body {
       @media only screen and (max-width: 1000px) {
         .left_container_top__topIn .infoAbout {
           margin-top: 5px;
-          line-height: 1.5; } }
+          line-height: 1.5;
+          width: 400px; } }
       .left_container_top__topIn .infoAbout .white_text {
         color: #fff; }
       .left_container_top__topIn .infoAbout a,
@@ -158,11 +161,12 @@ body {
   @media only screen and (max-width: 1000px) {
     .main_container--right {
       flex-direction: column;
-      position: static; } }
+      position: static;
+      width: 100%; } }
   @media only screen and (max-width: 1350px) {
     .main_container--right {
       padding: 10px 5px 10px 0;
-      width: 100%; } }
+      width: 520px; } }
   .main_container--right .about {
     width: 310px;
     height: 100vh;
@@ -256,7 +260,8 @@ body {
   @media only screen and (max-width: 1350px) {
     .contact {
       width: 500px;
-      justify-content: flex-end; } }
+      justify-content: flex-start;
+      align-content: center; } }
   .contact__form {
     background-color: #202022;
     padding: 2rem 3rem 4rem;
@@ -268,8 +273,7 @@ body {
         width: 90%;
         height: 600px;
         margin-left: auto;
-        padding: 15px;
-        margin-bottom: 150px; } }
+        padding: 15px; } }
     .contact__form p {
       margin: 0 auto;
       color: #fff;
@@ -448,7 +452,7 @@ body {
   @media only screen and (max-width: 1350px) {
     .projects {
       padding: 28px 0px;
-      align-items: center;
+      align-items: flex-end;
       width: 520px; } }
   .projects .switch__buttons {
     color: #8F8F90;
@@ -461,6 +465,9 @@ body {
     margin-bottom: auto;
     position: relative;
     font-size: 1.2rem; }
+    @media only screen and (max-width: 1350px) {
+      .projects .switch__buttons {
+        align-self: center; } }
     .projects .switch__buttons::before {
       content: ' ';
       position: absolute;
@@ -478,7 +485,7 @@ body {
       padding: 10px; }
   .projects__web {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
@@ -490,9 +497,7 @@ body {
     @media only screen and (max-width: 1350px) {
       .projects__web {
         padding: 0px;
-        width: 100%;
-        align-content: flex-end;
-        justify-items: flex-start;
+        width: 90%;
         margin-top: 5px; } }
     .projects__web a {
       margin-left: auto; }
@@ -523,7 +528,8 @@ body {
       margin-left: auto; }
       @media only screen and (max-width: 1350px) {
         .projects__web .projectsBox {
-          width: 500px; } }
+          width: 100%;
+          margin-bottom: 0px; } }
       .projects__web .projectsBox__miniature {
         display: flex;
         flex-direction: row;
@@ -534,12 +540,20 @@ body {
         margin: 0px 20px;
         position: absolute;
         top: -20px; }
+        @media only screen and (max-width: 1350px) {
+          .projects__web .projectsBox__miniature {
+            margin: 0;
+            justify-content: center; } }
         .projects__web .projectsBox__miniature--desk {
           width: 350px;
           height: 20px;
           margin-left: 40px;
           margin-right: 40px;
           transition: transform .4s .2s; }
+          @media only screen and (max-width: 1350px) {
+            .projects__web .projectsBox__miniature--desk {
+              margin: 0 20px;
+              width: 300px; } }
           .projects__web .projectsBox__miniature--desk img {
             width: 100%;
             height: auto;
@@ -548,6 +562,10 @@ body {
           width: 100px;
           height: 160px;
           transition: transform .4s; }
+          @media only screen and (max-width: 1350px) {
+            .projects__web .projectsBox__miniature--mobile {
+              margin: 0 20px;
+              width: 90px; } }
           .projects__web .projectsBox__miniature--mobile img {
             max-width: 100%;
             height: auto;
