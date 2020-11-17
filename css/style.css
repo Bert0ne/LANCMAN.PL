@@ -1,5 +1,8 @@
 /*
-600px - 900px Tablet Portrait
+0 - 600px  Phones 
+
+600px - 1000px Tablet Portrait
+
 1000px - 1280px Tablet Landscape
 
 1200px - 1800px  normal styles apply
@@ -7,6 +10,7 @@
   
 
 $breakpoint argument choices:
+- phone
 - tab-port
 - tab-land
 
@@ -169,6 +173,9 @@ body {
     .main_container--right {
       padding: 10px 5px 10px 0;
       width: 520px; } }
+  @media only screen and (max-width: 530px) {
+    .main_container--right {
+      width: 100vw; } }
   .main_container--right .about {
     width: 310px;
     height: 100vh;
@@ -275,7 +282,14 @@ body {
       padding: 0;
       align-self: flex-end;
       margin-right: 10px;
-      height: 200vh; } }
+      height: 100vh; } }
+  @media only screen and (max-width: 530px) {
+    .contact {
+      padding: 0px;
+      width: 90%;
+      margin-top: 5px;
+      height: 150vh;
+      font-size: 10px; } }
   .contact__form {
     background-color: #202022;
     padding: 2rem 3rem 4rem;
@@ -291,12 +305,22 @@ body {
     @media only screen and (max-width: 1000px) {
       .contact__form {
         margin: 0; } }
+    @media only screen and (max-width: 530px) {
+      .contact__form {
+        padding: 5px;
+        max-width: 360px;
+        font-size: 10px;
+        box-shadow: none;
+        height: 420px; } }
     .contact__form p {
       margin: 0 auto;
       color: #fff;
       text-align: center;
       margin-bottom: 15px;
       font-size: 1.1rem; }
+      @media only screen and (max-width: 530px) {
+        .contact__form p {
+          font-size: 12px; } }
     .contact__form input {
       background: none;
       border-width: 0;
@@ -313,6 +337,10 @@ body {
       color: #fff;
       outline: none;
       border-radius: 5px; }
+      @media only screen and (max-width: 530px) {
+        .contact__form textarea {
+          font-size: 12px;
+          height: 300px; } }
     .contact__form .hidden--visually {
       border: 0;
       clip: rect(1px 1px 1px 1px);
@@ -340,6 +368,10 @@ body {
       border-radius: 5px;
       margin: 0 auto;
       outline: none; }
+      @media only screen and (max-width: 530px) {
+        .contact__form .button {
+          font-size: 12px;
+          padding: .5rem 1rem; } }
       .contact__form .button:hover {
         color: #fff;
         border-color: #fff; }
@@ -353,10 +385,16 @@ body {
       outline: none; }
       .contact__form .floating:hover, .contact__form .floating:focus-within {
         background-color: rgba(143, 143, 144, 0.1); }
+      @media only screen and (max-width: 530px) {
+        .contact__form .floating {
+          font-size: 12px; } }
     .contact__form .floating__input {
       padding: 1.8rem 1rem 0.6rem;
       font-size: 1.2rem;
       caret-color: #fff; }
+      @media only screen and (max-width: 530px) {
+        .contact__form .floating__input {
+          font-size: 12px; } }
     .contact__form .floating__input::placeholder {
       color: rgba(0, 0, 0, 0); }
     .contact__form .floating__label {
@@ -365,6 +403,9 @@ body {
       max-height: 0;
       font-weight: 500;
       pointer-events: none; }
+      @media only screen and (max-width: 530px) {
+        .contact__form .floating__label {
+          font-size: 12px; } }
     .contact__form .floating__label::before {
       color: #8F8F90;
       content: attr(data-content);
@@ -377,6 +418,9 @@ body {
       top: 1px;
       position: absolute;
       font-size: 1.2rem; }
+      @media only screen and (max-width: 530px) {
+        .contact__form .floating__label::before {
+          font-size: 12px; } }
     .contact__form .floating__label::after {
       bottom: 1rem;
       content: "";
@@ -390,6 +434,9 @@ body {
       transform: scale3d(0, 1, 1);
       width: 100%;
       background-color: white; }
+      @media only screen and (max-width: 530px) {
+        .contact__form .floating__label::after {
+          font-size: 12px; } }
     .contact__form .floating__input:focus + .floating__label::after {
       transform: scale3d(1, 1, 1);
       opacity: 1; }
@@ -397,7 +444,7 @@ body {
       transform: translate3d(0, -2.2rem, 0) scale3d(1, 1, 1); }
     .contact__form .floating__label::before,
     .contact__form .floating__input:focus + .floating__label::before {
-      transform: translate3d(0, -5.12rem, 0) scale3d(0.82, 0.82, 1); }
+      transform: translate3d(0, -3.12rem, 0) scale3d(0.82, 0.82, 1); }
     .contact__form input:-webkit-autofill,
     .contact__form input:-webkit-autofill:hover,
     .contact__form input:-webkit-autofill:focus,
@@ -409,6 +456,10 @@ body {
       padding: 1.8rem 1rem 0.6rem;
       font-size: 1.2rem;
       caret-color: #fff; }
+      @media only screen and (max-width: 530px) {
+        .contact__form .floating__input2 {
+          font-size: 12px;
+          height: 200px; } }
     .contact__form .floating__input2::placeholder {
       color: rgba(0, 0, 0, 0); }
     .contact__form .floating__label2 {
@@ -417,6 +468,9 @@ body {
       max-height: 0;
       font-weight: 500;
       pointer-events: none; }
+      @media only screen and (max-width: 530px) {
+        .contact__form .floating__label2 {
+          font-size: 12px; } }
     .contact__form .floating__label2::before {
       color: #8F8F90;
       content: attr(data-content);
@@ -429,6 +483,10 @@ body {
       top: -280px;
       position: absolute;
       font-size: 1.2rem; }
+      @media only screen and (max-width: 530px) {
+        .contact__form .floating__label2::before {
+          font-size: 12px;
+          top: -200px; } }
     .contact__form .floating__label2::after {
       bottom: 1rem;
       content: "";
@@ -442,6 +500,9 @@ body {
       transform: scale3d(0, 1, 1);
       width: 100%;
       background-color: white; }
+      @media only screen and (max-width: 530px) {
+        .contact__form .floating__label2::after {
+          font-size: 12px; } }
     .contact__form .floating__input2:focus + .floating__label2::after {
       transform: scale3d(1, 1, 1);
       opacity: 1; }
@@ -449,7 +510,7 @@ body {
       transform: translate3d(0, 0rem, 0) scale3d(1, 1, 1); }
     .contact__form .floating__label2::before,
     .contact__form .floating__input2:focus + .floating__label2::before {
-      transform: translate3d(0, -3.12rem, 0) scale3d(0.82, 0.82, 1); }
+      transform: translate3d(0, -1.12rem, 0) scale3d(0.82, 0.82, 1); }
 
 .projects {
   width: 100%;
