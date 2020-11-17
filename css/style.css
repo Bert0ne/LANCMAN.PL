@@ -239,6 +239,18 @@ body {
     @media only screen and (max-width: 1000px) {
       .main_container--right .copyright {
         margin-top: auto; } }
+  .main_container--right .labelTabPort {
+    font-size: .9rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-top: 0;
+    margin-left: 0px;
+    padding: 5px 20px;
+    color: #fff;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: #151515; }
 
 .nav {
   color: #8F8F90;
@@ -605,7 +617,7 @@ body {
         display: flex;
         opacity: 1;
         visibility: visible;
-        width: 90vw; } }
+        width: 100vw; } }
     @media only screen and (max-width: 530px) {
       .projects__web {
         display: flex;
