@@ -176,7 +176,7 @@ body {
       flex-direction: column;
       align-content: flex-end;
       position: static;
-      min-width: 90vw;
+      min-width: 100vw;
       align-self: flex-end;
       display: flex; } }
   @media only screen and (max-width: 1350px) {
@@ -185,7 +185,8 @@ body {
       width: 520px; } }
   @media only screen and (max-width: 530px) {
     .main_container--right {
-      width: 100vw; } }
+      width: 100vw;
+      padding-right: 0; } }
   .main_container--right .about {
     width: 310px;
     height: 100vh;
@@ -295,12 +296,14 @@ body {
       padding: 0;
       align-self: flex-end;
       margin-right: 10px;
-      height: 100vh; } }
+      height: 100vh;
+      width: 100%; } }
   @media only screen and (max-width: 530px) {
     .contact {
       padding: 0px;
-      width: 90%;
+      width: 100%;
       margin-top: 5px;
+      margin-right: 0px;
       height: 150vh;
       font-size: 10px; } }
   .contact__form {
@@ -320,11 +323,11 @@ body {
         margin: 0; } }
     @media only screen and (max-width: 530px) {
       .contact__form {
-        padding: 5px;
-        max-width: 360px;
+        padding: 0px;
         font-size: 10px;
         box-shadow: none;
-        height: 420px; } }
+        height: 420px;
+        margin: 0; } }
     .contact__form p {
       margin: 0 auto;
       color: #fff;
@@ -677,7 +680,7 @@ body {
           .projects__web .projectsBox__miniature--desk img {
             width: 100%;
             height: auto;
-            border-radius: 15px; }
+            border-radius: 8px; }
         .projects__web .projectsBox__miniature--mobile {
           width: 100px;
           height: 160px;
@@ -689,7 +692,7 @@ body {
           .projects__web .projectsBox__miniature--mobile img {
             max-width: 100%;
             height: auto;
-            border-radius: 15px; }
+            border-radius: 5px; }
       .projects__web .projectsBox__name {
         font-size: 1.3rem;
         position: absolute;
@@ -710,6 +713,10 @@ body {
       .projects__web .projectsBox:hover .projectsBox__miniature--mobile,
       .projects__web .projectsBox:hover .projectsBox__miniature--desk {
         transform: translateY(-10px); }
+        @media only screen and (max-width: 530px) {
+          .projects__web .projectsBox:hover .projectsBox__miniature--mobile,
+          .projects__web .projectsBox:hover .projectsBox__miniature--desk {
+            transform: none; } }
   .projects__app {
     flex-direction: column;
     justify-content: center;
