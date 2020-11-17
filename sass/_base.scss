@@ -36,7 +36,11 @@ body {
     right: 20px;
     position: absolute;
     color: #8f8f90;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+
+    @include respond(tab-port) {
+        font-size: .9;
+    }            
 
     &__active {
         color: #fff;

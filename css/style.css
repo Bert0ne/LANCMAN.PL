@@ -44,7 +44,10 @@ body {
   right: 20px;
   position: absolute;
   color: #8f8f90;
-  font-size: 1.3rem; }
+  font-size: 1.1rem; }
+  @media only screen and (max-width: 1000px) {
+    .lang {
+      font-size: .9; } }
   .lang__active {
     color: #fff; }
   .lang a,
@@ -254,6 +257,10 @@ body {
     @media only screen and (max-width: 1000px) {
       .main_container--right .copyright {
         margin-top: auto; } }
+    .main_container--right .copyright a,
+    .main_container--right .copyright a:link,
+    .main_container--right .copyright a:active {
+      color: #8f8f90; }
   .main_container--right .labelTabPort {
     font-size: .9rem;
     font-weight: 600;

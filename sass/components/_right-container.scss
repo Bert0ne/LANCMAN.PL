@@ -92,6 +92,11 @@
         @include respond(tab-port) {
          margin-top: auto;
         }
+        a,
+        a:link,
+        a:active {
+          color: #8f8f90;
+        }
       }
       .labelTabPort {
         font-size: .9rem;
