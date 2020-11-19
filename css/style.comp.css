@@ -188,9 +188,7 @@ body {
   position: absolute;
   right: 0;
   padding: 88px 88px 88px 0;
-  max-width: 736px;
-  display: flex;
-  flex-direction: column; }
+  max-width: 736px; }
   @media only screen and (max-width: 1000px) {
     .main_container--right {
       flex-direction: column;
@@ -214,8 +212,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative;
-    align-self: center; }
+    position: relative; }
     @media only screen and (max-width: 1350px) {
       .main_container--right .about {
         margin-left: auto; } }
@@ -640,8 +637,7 @@ body {
       .projects__web {
         padding: 0px;
         width: 90%;
-        margin-top: 50px;
-        justify-content: flex-start; } }
+        margin-top: 5px; } }
     @media only screen and (max-width: 1000px) {
       .projects__web {
         display: flex;
@@ -689,12 +685,11 @@ body {
         .projects__web .projectsBox {
           width: 100%;
           margin-bottom: 0px;
-          margin-bottom: 60px;
           height: 150px; } }
       @media only screen and (max-width: 1000px) {
         .projects__web .projectsBox {
           width: 100%;
-          margin-bottom: 10px;
+          margin-bottom: 50px;
           height: 150px; } }
       @media only screen and (max-width: 530px) {
         .projects__web .projectsBox {

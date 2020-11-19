@@ -3,6 +3,8 @@
       right: 0;
       padding: 88px 88px 88px 0;
       max-width: 736px;
+      display: flex;
+      flex-direction: column;
 
       @include respond(tab-port) {
         flex-direction: column;
@@ -30,6 +32,7 @@
         align-items: center;
         flex-direction: column;
         position: relative;
+        align-self: center;
     
         @include respond(tab-land) {
           margin-left: auto;
